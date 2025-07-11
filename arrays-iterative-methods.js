@@ -20,7 +20,7 @@ students.forEach(function(stu, _, arr){
 let filtered = students.filter(stu => stu === 'Γιάννης')
 
 const users = [
-    {firstname : "Ανδρέας", age: 25, active: true, email: 'andre@gmail.com'},
+    {firstname : "Ανδρέας", age: 25, active: true, email: 'andres@gmail.com'},
     {firstname : "Νίκη", age: 25, active: true, email: 'niki20@gmail.com'}
 ]
 
