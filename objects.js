@@ -3,10 +3,6 @@ point3D.x = 5
 point3D.y = 10
 point3D.z = 20
 
-const  user = {
-    firstname : 'Alice',
-    lastname : 'Wonderland'
-}
 
 const point = {
     x : 10,
