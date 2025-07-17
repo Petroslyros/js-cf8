@@ -13,3 +13,5 @@ function getfromURL (url) {
 let value = 0
 let result = value || "default value"
 console.log(result)
+
+const
