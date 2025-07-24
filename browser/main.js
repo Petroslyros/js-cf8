@@ -1,7 +1,9 @@
-document.getElementsById('helloTxt').innerHTML = '<strong>Hello Coding!</strong>'
+// document.getElementsById('helloTxt').innerHTML = '<strong>Hello Coding!</strong>'
 
 const h1DOM = document.getElementById('helloTxt')
 h1DOM.innerHTML = h1DOM.innerHTML + 'Hello Coding!'
+
+//Style
 h1DOM.style.backgroundColor = "#ff0000"
 
 
