@@ -6,6 +6,7 @@ const Component = () => {
   return age > 10 ? <div> Pedro </div> : <div> Jack</div> 
 }
 
+
 //objects
 const name0 = "Pedro"
 const age0 = 20
@@ -45,16 +46,18 @@ const axios = require("axios");
 const fetchData = async () => {
   try{
 const respnse = await axios.get("https://cat-fact.herokuapp.com/facts");
-console.log(response.data)
+console.log(response.data)  
   }catch (err) {
   console.log("Error", err.message);
 } finally {
   console.log("HI")
   }
 };
-
 fetchData();
 
-
-
+//Template literals (set value inside ``)
+const fetchData1 = async (animalName) => {
+const data = await fetch(`imaginaryapi.com/searchterm=${animalName}`)
+const name = data.person?.name  // ? is IF the data exist
+}
 
