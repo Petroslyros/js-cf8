@@ -1,9 +1,3 @@
-//Anonymous functions
-const MyComponent = () => {
-  return ""
-}
-
-
 // Turnary operator
 let age = 16;
 let name = age > 10 ? "Pedro" : "Jack";
