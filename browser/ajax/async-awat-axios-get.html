@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.11.0/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <!-- Fixed: Added id="btn" and changed type to "button" -->
+  <button type="button" id="btn">Send Post</button>
+  <p id="output"></p>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', async () => {
+      try {
+        let response = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+        // Fixed: Removed stray closing </b> tag
+        document.getElementById('output').innerHTML = `<b>Title: </b>${response.data.title}
+                                                        <br>
+                                                        <b>Body: </b>${response.data.body}`
+
+      } catch(error) {
+        console.error('Fetch Error: ', error)
+        document.getElementById('output').innerHTML = 'Error Fetching Data'
+      }
+    })
+  </script>
+  
+</body>
+</html>
